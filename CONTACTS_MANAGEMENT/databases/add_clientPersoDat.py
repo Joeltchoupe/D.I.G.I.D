@@ -2,7 +2,7 @@ import psycopg2
 from psycopg2 import sql
 
 # Remplacez ces informations par les détails de votre base de données
-DATABASE_NAME = "votre_nom_de_bdd"
+DATABASE_NAME = "Clients"
 USER = "votre_utilisateur"
 PASSWORD = "votre_mot_de_passe"
 HOST = "votre_hote"
@@ -22,7 +22,7 @@ cur = conn.cursor()
 
 # Exemple d'insertion de données
 cur.execute("""
-    INSERT INTO Client (Nom, Prenom, DateNaissance, Sexe, AdressePostale, AdresseEmail, NumeroTelephone,
+    INSERT INTO PersonalDatas (Nom, Prenom, DateNaissance, Sexe, AdressePostale, AdresseEmail, NumeroTelephone,
                        NumeroSecuriteSociale, EtatCivil, SituationFamiliale, Nationalite, Profession, Revenu,
                        SituationPatrimoniale)
     VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
