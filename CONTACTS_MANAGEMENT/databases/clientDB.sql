@@ -1,8 +1,8 @@
-CREATE DATABASE Clients;
+CREATE DATABASE IF NOT EXISTS  Clients;
 
 \c Clients;
 
-CREATE TABLE PersonalDatas (
+CREATE TABLE IF NOT EXISTS PersonalDatas (
     ClientID SERIAL PRIMARY KEY,
     Nom VARCHAR(50) NOT NULL,
     Prenom VARCHAR(50) NOT NULL,
