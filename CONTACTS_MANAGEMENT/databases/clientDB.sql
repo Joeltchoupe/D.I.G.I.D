@@ -1,4 +1,8 @@
-CREATE TABLE Client (
+CREATE DATABASE Clients;
+
+\c Clients;
+
+CREATE TABLE PersonalDatas (
     ClientID SERIAL PRIMARY KEY,
     Nom VARCHAR(50) NOT NULL,
     Prenom VARCHAR(50) NOT NULL,
